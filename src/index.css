@@ -1,0 +1,187 @@
+html, body, #root {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure each section takes the full viewport height */
+  width: 100%; /* Ensure each section takes the full viewport width */
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainnav{
+  position: fixed;
+  top: 32%;
+  left: 25px;
+}
+.bar{
+  position: absolute;
+  left: -15px;
+  top: 0;
+  height: 40px;
+  width: 4px;
+  background-color: #ff0000;
+  border-radius: 20px;
+}
+.i{
+  color: #ff0000;
+  font-size: 25px;
+}
+.iconbar a {
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.iconbar a span {
+  transition: all .5s ease;
+  pointer-events: none; /* Make the entire link unclickable */
+  color: transparent;
+}
+.iconbar a:hover span{
+  color: currentColor;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%; /* 30% of the card's width */
+  position: relative;
+}
+
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.card-content p {
+  margin: 0;
+  color: #555;
+}
+
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .card-image {
+    width: 30%;
+    padding-bottom: 0;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 20px;
+    width: 70%;
+  }
+}
+.btndelete {
+  margin: auto 10px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 300px;
+}
+
+.btndelete:hover {
+  background-color: #d32f2f;
+}
+.car-dashboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.car-details {
+  display: flex;
+  align-items: center;
+}
+
+.car-details img {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.car-info {
+  flex: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #d32f2f;
+}
