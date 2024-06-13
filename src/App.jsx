@@ -1,18 +1,15 @@
 import CarDashboard from './component/CarDashBoard';
 import Login from './component/Login'
+import GpsTracker from './component/GpsTracker';
 import SignUp from './component/SignUp'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 import Dashboard from './component/Dashboard';
 const router = createBrowserRouter([
   {
-    path: "/Login",
+    path: "/",
     element: (
-      <div className="main">
-  <div className='contain'>
-     <Login></Login>
-    </div>
-      </div>
+      <Dashboard></Dashboard>
   
      
     ),
@@ -39,8 +36,6 @@ const router = createBrowserRouter([
     path: "/CarDashBoard",
     element: (
   <CarDashboard></CarDashboard>
-     
-   
     ),
   },
 ]);

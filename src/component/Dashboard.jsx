@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { MdNote } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
 import { FaCar } from 'react-icons/fa';
-import Location from './Location'
 import Card from './Card'
+import AddAdmin from './AddAdmin';
 
 const Dashboard = () => {
   useEffect(() => {
@@ -55,7 +55,7 @@ const Dashboard = () => {
       </section>
       <section className="section" id="addadmin">
         <div className="icon">
-        <Location/>
+      <AddAdmin></AddAdmin>
         </div>
       </section>
       <section className="section" id="addcar">

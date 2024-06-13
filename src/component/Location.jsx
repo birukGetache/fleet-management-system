@@ -35,7 +35,7 @@ const Location = () => {
   }, []); // Empty dependency array ensures this effect runs once on mount and cleanup on unmount
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
+    <div className='map' style={{ textAlign: 'center', padding: '20px' }}>
       <h1>Track GPS Location</h1>
       {location.latitude && location.longitude ? (
         <>
