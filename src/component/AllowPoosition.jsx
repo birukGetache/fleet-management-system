@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { MapContainer, TileLayer, Circle, Polyline, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -27,7 +27,7 @@ const carPath2 = [
 const AllowPosition = () => {
   return (
     <MapContainer
-      center={[8.00000000, 38.00000000]} // Center th map on Ethiopia
+      center={[8.90000000, 40.00000000]} // Center th map on Ethiopia
       zoom={7} // Adjust zoom level for better view
       style={{ height: '500px', width: '100vw' }}
       scrollWheelZoom={false}

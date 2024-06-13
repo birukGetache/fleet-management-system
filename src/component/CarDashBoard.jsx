@@ -35,7 +35,7 @@ const CarDashboard = () => {
       </div>
 
       <div className="card">
-        <p><FontAwesomeIcon icon={faOilCan} size="2x" color="#ff0000" /> Oil type: Benzine</p>
+        <p><FontAwesomeIcon icon={faOilCan} size="20px" color="#ff0000" /> Oil type: Benzine</p>
       </div>
 
       <div className="card">

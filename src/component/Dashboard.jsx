@@ -4,6 +4,7 @@ import { FaUser } from 'react-icons/fa';
 import { FaCar } from 'react-icons/fa';
 import Card from './Card'
 import AddAdmin from './AddAdmin';
+import Landing from './Landing';
 
 const Dashboard = () => {
   useEffect(() => {
@@ -50,7 +51,7 @@ const Dashboard = () => {
       </div>
       <section className="section" id='takenote'>
         <div className="icon">
-      <Card></Card>
+   ?<Landing></Landing>
         </div>
       </section>
       <section className="section" id="addadmin">

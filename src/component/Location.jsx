@@ -36,14 +36,14 @@ const Location = () => {
 
   return (
     <div className='map' style={{ textAlign: 'center', padding: '20px' }}>
-      <h1>Track GPS Location</h1>
+  
       {location.latitude && location.longitude ? (
         <>
-          <div>
+   
+          <h1>Track GPS Location</h1>
             <h3>Latitude: {location.latitude}</h3>
             <h3>Longitude: {location.longitude}</h3>
-          </div>
-          <Map latitude={location.latitude} longitude={location.longitude} />
+         <Map latitude={location.latitude} longitude={location.longitude} />
         </>
       ) : (
         <p>Getting location...</p>
