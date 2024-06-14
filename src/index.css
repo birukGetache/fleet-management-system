@@ -305,7 +305,7 @@ margin-top: 20px;
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  width: 80%;
+  width: 90vw;
   margin: auto;
 }
 
@@ -318,7 +318,6 @@ margin-top: 20px;
   border-radius: 5px;
   width: 500px;
   height: 513px;
-  margin-right: 100px;
 margin-bottom: 0;
 padding: 20px;
 }
@@ -460,11 +459,12 @@ padding: 20px;
 }
 .properties{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2px;
-  width: 100%;
+  width: 100vw;
 }
 .allowlocation{
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -496,9 +496,7 @@ padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
   width: 300px;
-  margin: 15px auto;
 }
 
 .status-header {
@@ -549,10 +547,10 @@ padding: 20px;
 .all{
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 /* Landing.css */
 
@@ -663,6 +661,7 @@ width: 100%;
   .properties {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
   }
 
 
@@ -670,6 +669,7 @@ width: 100%;
     padding: 8px;
     font-size: 14px;
     width: 80%;
+    margin: 10px auto;
   }
 
   .card p {
@@ -699,7 +699,7 @@ width: 100%;
 }
 }
 
-@media screen and  (max-width: 480px) {
+@media screen and  (max-width: 550px) {
   .add-car-form{
     margin: 10px;
   }
@@ -712,9 +712,9 @@ width: 100%;
   }
   .car-details{
 
-    margin: 0;
+    margin: 0 20px;
     padding: 0;
-    width: 500px;
+    width: auto;
   }
   .stat{
     display: grid;
@@ -768,6 +768,8 @@ width: 100%;
   }
   .map{
     margin-top: 10px;
-    width: 460px;
+    margin: 10px 20px;
+    padding: 0;
+    width: auto;
   }
 }

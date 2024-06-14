@@ -51,14 +51,14 @@ const CarDashboard = () => {
       </div>
       </div>
       <div className="car-dashboard">
-        {/* <button
+         <button
           style={{ position: "absolute", bottom: "0", backgroundColor: "#d32f2f", cursor: "pointer", right: "20px", width: "100px", height: "50px" }}
           onClick={() => {
             navigate(-1);
           }}
         >
           Back
-        </button> */}
+        </button> 
 
         <div className="car-details">
           <img src={image} alt={title} />
@@ -77,9 +77,9 @@ const CarDashboard = () => {
         <Location />
       </div>
 
-      <Chart />
+     <Chart />
 
-      <div className='items' style={{  width: "calc(100% - 40px)", backgroundColor: "#ffffff", padding: "20px", maxHeight: "calc(100vh - 100px)", overflowY: "auto",display:"grid" }}>
+        <div className='items' style={{  width: "calc(100% - 40px)", backgroundColor: "#ffffff", padding: "20px", maxHeight: "calc(100vh - 100px)", overflowY: "auto",display:"grid" }}>
         {maintenanceData.map((item) => (
           <div key={item.id} style={{ marginBottom: "10px", padding: "10px", border: "1px solid #ccc", borderRadius: "5px" }}>
             <h4> <span className='span'>status:</span> {item.status}</h4>
@@ -99,7 +99,7 @@ const CarDashboard = () => {
      </div>
         </div>
     
-     </div>
+     </div> 
     </div>
   );
 };
