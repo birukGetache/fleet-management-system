@@ -46,7 +46,7 @@ const Landing = () => {
   <li>
     <div class="feature-card">
       <div class="icon">
-        <FontAwesomeIcon icon={faMapMarkerAlt} />
+        <FontAwesomeIcon style={{color:"red"}} icon={faMapMarkerAlt} />
       </div>
       <div class="content">
         <span>Real-time tracking of vehicles</span>
@@ -57,7 +57,7 @@ const Landing = () => {
   <li>
     <div class="feature-card">
       <div class="icon">
-        <FontAwesomeIcon icon={faRoute} />
+        <FontAwesomeIcon style={{color:"red"}} icon={faRoute} />
       </div>
       <div class="content">
         <span>Route optimization</span>
@@ -68,7 +68,7 @@ const Landing = () => {
   <li>
     <div class="feature-card">
       <div class="icon">
-        <FontAwesomeIcon icon={faUsers} />
+        <FontAwesomeIcon style={{color:"red"}} icon={faUsers} />
       </div>
       <div class="content">
         <span>Driver management</span>
@@ -79,7 +79,7 @@ const Landing = () => {
   <li>
     <div class="feature-card">
       <div class="icon">
-        <FontAwesomeIcon icon={faTools} />
+        <FontAwesomeIcon style={{color:"red"}} icon={faTools} />
       </div>
       <div class="content">
         <span>Vehicle maintenance scheduling</span>
