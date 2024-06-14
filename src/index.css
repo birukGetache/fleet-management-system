@@ -4,6 +4,7 @@ html, body, #root {
   padding: 0;
   scroll-behavior: smooth;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .landing-page {
