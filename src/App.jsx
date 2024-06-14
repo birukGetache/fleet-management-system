@@ -5,6 +5,7 @@ import SignUp from './component/SignUp'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 import Dashboard from './component/Dashboard';
+import Card from './component/Card';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,18 @@ const router = createBrowserRouter([
       <div className="main">
  <div  className='contain'>
      <SignUp></SignUp>
+      </div>
+      </div>
+     
+   
+    ),
+  },
+  {
+    path: "/Card",
+    element: (
+      <div className="main">
+ <div  className='contain'>
+   <Card></Card>
       </div>
       </div>
      

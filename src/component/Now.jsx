@@ -10,7 +10,7 @@ const Now = (props) => {
         <div className='two'>
             <p><span>where done last:-</span> {props.lastworkcity}</p>
             <p><span>what to be done :-</span>{props.lastworkpro}</p>
-            <span className='lastdate'>date :- {props.lastmakedate}</span>
+            <span className='lastdate'><span>date :- </span>{props.lastmakedate}</span>
         </div>
     
   

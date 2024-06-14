@@ -2,20 +2,19 @@ import React, { useEffect } from 'react';
 import { MdNote } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
 import { FaCar } from 'react-icons/fa';
-import Card from './Card'
 import AddAdmin from './AddAdmin';
 import Landing from './Landing';
-
+import AddCarForm from './AddCarForm';
 const Dashboard = () => {
   useEffect(() => {
     const links = document.querySelectorAll('.js-fixed-anchor');
-    const sections = document.querySelectorAll('.section');
+    const sections = document.querySelectorAll('.sec');
     const bar = document.querySelector('.bar');
 
     const handleScroll = () => {
       sections.forEach((section, index) => {
-        const beginPointer = section.offsetTop - 400;
-        const lastPointer = beginPointer + section.clientHeight + 300;
+        const beginPointer = section.offsetTop - 500;
+        const lastPointer = beginPointer + section.clientHeight + 500;
 
         if (window.scrollY >= beginPointer && window.scrollY <= lastPointer) {
           bar.style.top = `${33 * index}%`;
@@ -49,19 +48,19 @@ const Dashboard = () => {
           </a>
         </div>
       </div>
-      <section className="section" id='takenote'>
+      <section className='sec' id='takenote'>
         <div className="icon">
-   ?<Landing></Landing>
+   <Landing></Landing>
         </div>
       </section>
-      <section className="section" id="addadmin">
+      <section className="section sec" id="addadmin">
         <div className="icon">
       <AddAdmin></AddAdmin>
         </div>
       </section>
-      <section className="section" id="addcar">
-        <div className="icon">
-          <FaCar />
+      <section className="section sec" id="addcar">
+        <div className="icons">
+         <AddCarForm></AddCarForm>
         </div>
       </section>
     </div>

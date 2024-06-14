@@ -3,7 +3,167 @@ html, body, #root {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  width: fit-content;
+  width: 100%;
+}
+
+.landing-page {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+}
+.add-car-form {
+  margin: 0 100px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.add-car-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.icons{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-section label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-section label:last-child {
+  margin-right: 0;
+}
+
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+
+
+
+
+.features-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-card .icon {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.feature-card .icon svg {
+  font-size: 24px;
+}
+
+.feature-card .content {
+  flex: 1 1 auto;
+}
+
+.feature-card .content span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feature-card .content p {
+  margin: 0;
+  color: #666666;
+}
+
+
+.chart-section .chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.get-started-section {
+  margin: 40px 0;
+}
+
+.get-started-section p {
+  margin-bottom: 20px;
+}
+
+.list-cars-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.list-cars-button:hover {
+  background-color: #ff5a4d;
+}
+.mainlanding{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .features-section, .chart-section {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .chart-section .chart-container {
+    width: 100%;
+  }
 }
 
 .section {
@@ -123,7 +283,7 @@ margin-top: 20px;
   color: #555;
 }
 .btndelete {
-  margin: auto 10px;
+  margin: 10px auto;
   padding: 8px 16px;
   background-color: #f44336;
   color: white;
@@ -134,7 +294,7 @@ margin-top: 20px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 300px;
+  width: 100px;
 }
 
 .btndelete:hover {
@@ -143,11 +303,9 @@ margin-top: 20px;
 .car-dashboard {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 20px;
   width: 80%;
   margin: auto;
-
 }
 
 
@@ -157,9 +315,11 @@ margin-top: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 100%;
-  margin: 10px 8px;
-
+  width: 500px;
+  height: 513px;
+  margin-right: 100px;
+margin-bottom: 0;
+padding: 20px;
 }
 .car-details img{
   width: 200px;
@@ -170,11 +330,14 @@ margin-top: 20px;
   border: 1px solid #ccc;
   color: #cc0000;
   width: 350px;
+  height: inherit;
+  padding: 20px !important;
 }
 .car-details img {
-  width: 250px;
+  width: 200px;
   height: auto;
   margin-right: 20px;
+  padding-top: 20px;
 }
 
 .car-info {
@@ -184,6 +347,7 @@ margin-top: 20px;
 .controls {
   display: flex;
   gap: 10px;
+  padding-bottom: 2px;
 }
 
 .control-btn {
@@ -295,6 +459,7 @@ margin-top: 20px;
 }
 .properties{
   display: flex;
+  justify-content: space-around;
   gap: 2px;
   width: 100%;
 }
@@ -313,6 +478,7 @@ margin-top: 20px;
   gap: 10px;
   color: #cc0000;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .span{
@@ -369,7 +535,7 @@ margin-top: 20px;
 .stat{
 
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 50px;
     justify-content: space-between; /* This should work */
     padding: 20px;
@@ -437,7 +603,7 @@ span {
 button {
   padding: 12px 24px;
   font-size: 1.2rem;
-  background-color: #007bff;
+  background-color: #ff0000;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -446,7 +612,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff5a4d;
 }
 
 footer {
@@ -457,15 +623,27 @@ footer {
 
 .one{
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 20px;
   padding: 10px;
 }
 .two{
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 20px;
 padding: 10px;
+}
+.one p span{
+  color: blue;
+}
+.two p span{
+  color: blue;
+}
+.lastdate{
+  color: #ff0000;
+}
+.lastdate span{
+  color: blue;
 }
 .dates{
   display: grid;
@@ -474,6 +652,7 @@ padding: 10px;
 }
 .leaflet-container{
 margin: 10px;
+width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -506,8 +685,6 @@ margin: 10px;
 }
 
 .stat > div {
-  background-color: #f0f0f0; /* Background color for the divs */
-  padding: 20px; /* Padding inside each div */
   border-radius: 8px; /* Rounded corners */
   display: flex; /* Use flexbox for content alignment */
   align-items: center; /* Center content vertically */
@@ -522,6 +699,16 @@ margin: 10px;
 }
 
 @media screen and  (max-width: 480px) {
+  .add-car-form{
+    margin: 10px;
+  }
+  .mainnav{
+  top: 0;
+  display: flex;
+  }
+  .bar{
+    display: none;
+  }
   .car-details{
 
     margin: 0;

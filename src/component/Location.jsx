@@ -35,7 +35,7 @@ const Location = () => {
   }, []); // Empty dependency array ensures this effect runs once on mount and cleanup on unmount
 
   return (
-    <div className='map' style={{ textAlign: 'center', padding: '20px' }}>
+    <div className='map' style={{ textAlign: 'center', padding: '30px' }}>
   
       {location.latitude && location.longitude ? (
         <>

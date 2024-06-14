@@ -29,7 +29,7 @@ const AllowPosition = () => {
     <MapContainer
       center={[8.90000000, 40.00000000]} // Center th map on Ethiopia
       zoom={7} // Adjust zoom level for better view
-      style={{ height: '500px', width: '100vw' }}
+      style={{ height: '500px'}}
       scrollWheelZoom={false}
       dragging={false}
       doubleClickZoom={false}
