@@ -51,14 +51,14 @@ const CarDashboard = () => {
       </div>
       </div>
       <div className="car-dashboard">
-         <button
+         {/* <button
           style={{ position: "absolute", bottom: "0", backgroundColor: "#d32f2f", cursor: "pointer", right: "20px", width: "100px", height: "50px" }}
           onClick={() => {
             navigate(-1);
           }}
         >
           Back
-        </button> 
+        </button>  */}
 
         <div className="car-details">
           <img src={image} alt={title} />
